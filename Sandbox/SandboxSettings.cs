@@ -32,11 +32,9 @@ namespace Sandbox
 
         private void SetupSetting(SettingsControl settingsControl, WorldSettings worldSettings, string id, string name, string description)
         {
-            settingsControl.AddToggle(name, description, worldSettings.GetBool<SandboxSettings>(id),
-                // Using this [Obsolete] method turns the toggle into an on/off dropdown,
-                // which is not as nice but at least it works. A normal Toggle doesn't save the setting.
-                () => worldSettings.SetBool<SandboxSettings>(id, true),
-                () => worldSettings.SetBool<SandboxSettings>(id, false));
+            settingsControl.AddToggle(name, description,
+                () => worldSettings.GetBool<SandboxSettings>(id),
+                it => worldSettings.SetBool<SandboxSettings>(id, it));
         }
 
         internal static bool FreeIf(string setting, ref double __result)
