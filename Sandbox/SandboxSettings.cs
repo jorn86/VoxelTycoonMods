@@ -39,12 +39,17 @@ namespace Sandbox
 
         internal static bool FreeIf(string setting, ref double __result)
         {
-            if (WorldSettings.Current.GetBool<SandboxSettings>(setting))
+            if (Get(setting))
             {
                 __result = 0;
                 return false;
             }
             return true;
+        }
+
+        internal static bool Get(string setting)
+        {
+            return WorldSettings.Current.GetBool<SandboxSettings>(setting);
         }
     }
 }

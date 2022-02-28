@@ -16,6 +16,11 @@ namespace Sandbox
             // vehicle price code before settings are initialized
             new Harmony(PatchId).PatchAll();
             _logger.Log("Sandbox patch complete");
+            _logger.Log("Current settings: Building=" + SandboxSettings.Get(SandboxSettings.FreeBuilding)
+                + ", Infra=" + SandboxSettings.Get(SandboxSettings.FreeInfra)
+                + ", Vehicle=" + SandboxSettings.Get(SandboxSettings.FreeVehicle)
+                + ", Terraform=" + SandboxSettings.Get(SandboxSettings.FreeTerraform)
+                + ", Explore=" + SandboxSettings.Get(SandboxSettings.FreeExplore));
         }
 
         protected override void Deinitialize()

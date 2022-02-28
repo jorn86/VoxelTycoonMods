@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using VoxelTycoon.Buildings;
 using VoxelTycoon.Tracks.Rails;
 
 namespace Sandbox

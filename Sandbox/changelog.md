@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [0.1.3] - 2022-02-28
+### Fixed
+- Vehicle prices were not reduced in some cases, although not quite sure why. It's now fixed by overriding both BasePrice and Price values.
+
 ## [0.1.2] - 2022-02-24
 ### Fixed
 - Mod updates will now be published as updates instead of as new mod. Thanks @andrewpey on Discord for the help.
