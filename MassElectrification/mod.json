@@ -1,0 +1,6 @@
+{
+  "Title": "Mass Electrification",
+  "Description": "Allows you to electrify much more track in one go. Press Control while using the electrification tool to extend the selection to up to thousands of tracks at once.\n\nSource: https://github.com/jorn86/VoxelTycoonMods\nChangelog: https://github.com/jorn86/VoxelTycoonMods/blob/master/MassElectrification/changelog.md\n\nVersion 0.1.0",
+  "Tags": [ "Gameplay", "Rails" ],
+  "PublishedFileId": 2769452712
+}
