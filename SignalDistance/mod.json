@@ -1,0 +1,6 @@
+{
+  "Title": "Signal distance",
+  "Description": "Shows the distance to the previous and next signal or intersection while building new signals\n\nSource: https://github.com/jorn86/VoxelTycoonMods\nChangelog: https://github.com/jorn86/VoxelTycoonMods/blob/master/SignalDistance/changelog.md\n\nVersion 0.1.0",
+  "Tags": [ "Utils", "Rails" ],
+  "PublishedFileId": 2770538697
+}
