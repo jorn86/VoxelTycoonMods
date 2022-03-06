@@ -1,0 +1,6 @@
+{
+  "Title": "Factory buffer",
+  "Description": "Increases the item buffer size for factory buildings, so production can run continuously instead of having to wait for input every cycle.\n\nThe item progress bars will be green if there's enough items for a single production cycle, or orange if it's waiting for input.\n\nSource: https://github.com/jorn86/VoxelTycoonMods\nChangelog: https://github.com/jorn86/VoxelTycoonMods/blob/master/FactoryBuffer/changelog.md\n\nVersion 0.1.0",
+  "Tags": [ "Gameplay", "Factories" ],
+  "PublishedFileId": 2774385811
+}
