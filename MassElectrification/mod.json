@@ -1,6 +1,6 @@
 {
   "Title": "Mass Electrification",
-  "Description": "Allows you to electrify much more track in one go. Press Control while using the electrification tool to extend the selection to up to thousands of tracks at once.\n\nSource: https://github.com/jorn86/VoxelTycoonMods\nChangelog: https://github.com/jorn86/VoxelTycoonMods/blob/master/MassElectrification/changelog.md\n\nVersion 0.1.0",
+  "Description": "Allows you to electrify all rails in one go. Press Control while using the electrification tool on a non-electrified piece of rail, to extend the selection to up all connected non-electrified track.\nIt seems like the game doesn't like electrifying that much track at once, so it won't always show the power lines. Save and reload your game, then the new lines will be rendered correctly.'\n\nSource: https://github.com/jorn86/VoxelTycoonMods\nChangelog: https://github.com/jorn86/VoxelTycoonMods/blob/master/MassElectrification/changelog.md\n\nVersion 0.1.1",
   "Tags": [ "Gameplay", "Rails" ],
   "PublishedFileId": 2769452712
 }

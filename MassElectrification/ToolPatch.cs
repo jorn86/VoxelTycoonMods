@@ -13,6 +13,8 @@ namespace MassElectrification
 
         internal static bool Prefix(ref Rail ____rail, UniqueList<Rail> ____targets)
         {
+            // make tool update trigger on pressing or releasing the control key
+            // (instead of just on hovering over a different rail piece)
             if (_multiMode != InputHelper.Control)
             {
                 _multiMode = InputHelper.Control;
