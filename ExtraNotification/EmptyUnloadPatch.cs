@@ -7,6 +7,7 @@ using VoxelTycoon.Tracks;
 using VoxelTycoon.Tracks.Rails;
 using VoxelTycoon.Tracks.Roads;
 using VoxelTycoon.Tracks.Tasks;
+using VoxelTycoon.UI;
 
 namespace ExtraNotification
 {
@@ -48,7 +49,8 @@ namespace ExtraNotification
                 _logger.Log("Removed " + __instance.Name);
                 NotificationManager.Current.PushWarning($"{__instance.Name} has nothing to unload",
                     $"{__instance.Name} arrived at {__instance.VehicleStation.Location.Name} with Unload order, but doesn't have cargo to unload",
-                    new GoToVehicleNotificationAction(__instance));
+                    new GoToVehicleNotificationAction(__instance),
+                    FontIcon.FaSolid("\uf0d1"));
             }
         }
     }

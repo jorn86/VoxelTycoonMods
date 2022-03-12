@@ -6,6 +6,7 @@ using VoxelTycoon;
 using VoxelTycoon.Notifications;
 using VoxelTycoon.Tracks;
 using VoxelTycoon.Tracks.Rails;
+using VoxelTycoon.UI;
 
 namespace ExtraNotification
 {
@@ -39,7 +40,8 @@ namespace ExtraNotification
             {
                 NotificationManager.Current.PushWarning($"{__instance.Name} waiting at a signal",
                     $"{__instance.Name} has been waiting at a signal for {_warningTime.Value} days",
-                    new GoToVehicleNotificationAction(__instance));
+                    new GoToVehicleNotificationAction(__instance),
+                    FontIcon.FaSolid("\uf637"));
                 waiting.Remove(__instance as Train);
             }
         }
