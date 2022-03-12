@@ -106,7 +106,7 @@ namespace FactoryBuffer
                 }
                 if (timeSinceLastInput + 10f < Time.time)
                 {
-                    _logger.Log($"cancelling background load: {PrintItems(waitingItems)}");
+                    //_logger.Log($"cancelling background load: {PrintItems(waitingItems)}");
                     return;
                 }
                 await Task.Delay(300);
