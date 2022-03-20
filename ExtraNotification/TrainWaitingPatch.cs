@@ -15,7 +15,6 @@ namespace ExtraNotification
     {
         private static readonly VoxelTycoon.Logger _logger = new Logger<TrainWaitingPatch>();
         private static readonly Dictionary<Train, float> waiting = new Dictionary<Train, float>();
-        private static readonly Lazy<int> _warningTime = new Lazy<int>(() => ExtraNotificationSettings.GetSignalWarningDays());
 
         [HarmonyPatch(typeof(Train), nameof(Train.DetectObstacle))]
         internal static void Postfix(Train __instance, ref object obstacle)
@@ -33,13 +32,14 @@ namespace ExtraNotification
         [HarmonyPatch(typeof(Vehicle), methodName: "PushNotifications")]
         internal static void Postfix(Vehicle __instance)
         {
+            var warningTime = ExtraNotificationSettings.GetSignalWarningDays();
             if (__instance is Train
-                && _warningTime.Value > 0
+                && warningTime > 0
                 && waiting.TryGetValue(__instance as Train, out float value)
-                && Time.fixedTime - value > TimeManager.DaysToGameSeconds(_warningTime.Value))
+                && Time.fixedTime - value > TimeManager.DaysToGameSeconds(warningTime))
             {
                 NotificationManager.Current.PushWarning($"{__instance.Name} waiting at a signal",
-                    $"{__instance.Name} has been waiting at a signal for {_warningTime.Value} days",
+                    $"{__instance.Name} has been waiting at a signal for {warningTime} days",
                     new GoToVehicleNotificationAction(__instance),
                     FontIcon.FaSolid("\uf637"));
                 waiting.Remove(__instance as Train);

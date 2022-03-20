@@ -1,4 +1,4 @@
-﻿using VoxelTycoon;
+using VoxelTycoon;
 using VoxelTycoon.Game.UI;
 using VoxelTycoon.Modding;
 
@@ -14,7 +14,7 @@ namespace ExtraNotification
         {
             worldSettings.SetBool<ExtraNotificationSettings>(EmptyTrainWarning, true);
             worldSettings.SetBool<ExtraNotificationSettings>(EmptyTruckWarning, true);
-            worldSettings.SetInt<ExtraNotificationSettings>(SignalWarning, 2);
+            worldSettings.SetInt<ExtraNotificationSettings>(SignalWarning, 3);
         }
 
         protected override void SetupSettingsControl(SettingsControl settingsControl, WorldSettings worldSettings)
