@@ -1,0 +1,110 @@
+{
+  "OutputInterval": 0.2,
+  "RequiresDeposit": true,
+  "Spacing": 20.0,
+  "Submeshes": [
+    {
+      "MeshUri": "base/stone_mine_saw.obj",
+      "DefaultAnimation": {
+        "PositionX": {
+          "0": 1.965
+        },
+        "PositionY": {
+          "0": 2.357,
+          "0.0625": 2.165,
+          "0.125": 1.973,
+          "0.1875": 1.781,
+          "0.25": 1.588,
+          "0.3125": 1.396,
+          "0.375": 1.204,
+          "0.4375": 1.012,
+          "0.5": 0.819,
+          "0.5625": 1.012,
+          "0.625": 1.204,
+          "0.75": 1.396,
+          "0.8125": 1.588,
+          "0.875": 1.781,
+          "0.9375": 1.973,
+          "1": 2.357
+        },
+        "PositionZ": {
+          "0": 1.323
+        },
+        "RotationX": {
+          "0": 0.0,
+          "2": 720.0
+        }
+      }
+    },
+    {
+      "MeshUri": "base/stone_mine_arm.obj",
+      "DefaultAnimation": {
+        "PositionX": {
+          "0": 1.965
+        },
+        "PositionY": {
+          "0": 2.357,
+          "0.0625": 2.165,
+          "0.125": 1.973,
+          "0.1875": 1.781,
+          "0.25": 1.588,
+          "0.3125": 1.396,
+          "0.375": 1.204,
+          "0.4375": 1.012,
+          "0.5": 0.819,
+          "0.5625": 1.012,
+          "0.625": 1.204,
+          "0.75": 1.396,
+          "0.8125": 1.588,
+          "0.875": 1.781,
+          "0.9375": 1.973,
+          "1": 2.357
+        },
+        "PositionZ": {
+          "0": 1.057
+        }
+      }
+    }
+  ],
+  "Sounds": null,
+  "Smokes": null,
+  "ResearchUri": "BigMines/mining_3.research",
+  "Size": [
+    7.0,
+    3.0,
+    7.0
+  ],
+  "Liveries": {
+    "default": {
+      "MeshUri": "base/stone_mine.obj",
+      "MeshVariant": null,
+      "Lights": null,
+      "NightLiveries": [
+        {
+          "MeshUri": null,
+          "MeshVariant": "night_1",
+          "Lights": null
+        }
+      ],
+      "BiomeLiveries": {
+        "arctic": {
+          "MeshUri": null,
+          "MeshVariant": "arctic",
+          "Lights": null,
+          "NightLiveries": [
+            {
+              "MeshUri": null,
+              "MeshVariant": "arctic_night_1",
+              "Lights": null
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Price": 1380000.0,
+  "PriceMultiplier": null,
+  "RunningCosts": null,
+  "RunningCostsMultiplier": null,
+  "Hidden": false
+}

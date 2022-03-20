@@ -1,0 +1,66 @@
+{
+  "OutputInterval": 0.2,
+  "RequiresDeposit": true,
+  "Spacing": 20.0,
+  "Submeshes": [
+    {
+      "MeshUri": "base/coal_mine_wheel.obj",
+      "DefaultAnimation": {
+        "PositionX": {
+          "0": 1.2
+        },
+        "PositionY": {
+          "0": 4.6
+        },
+        "PositionZ": {
+          "0": 0.238
+        },
+        "RotationZ": {
+          "0": 0.0,
+          "2": 360.0
+        }
+      }
+    }
+  ],
+  "Sounds": null,
+  "Smokes": null,
+  "ResearchUri": "BigMines/mining_3.research",
+  "Size": [
+    6.0,
+    5.0,
+    6.0
+  ],
+  "Liveries": {
+    "default": {
+      "MeshUri": "base/coal_mine.obj",
+      "MeshVariant": null,
+      "Lights": null,
+      "NightLiveries": [
+        {
+          "MeshUri": null,
+          "MeshVariant": "night_1",
+          "Lights": null
+        }
+      ],
+      "BiomeLiveries": {
+        "arctic": {
+          "MeshUri": null,
+          "MeshVariant": "arctic",
+          "Lights": null,
+          "NightLiveries": [
+            {
+              "MeshUri": null,
+              "MeshVariant": "arctic_night_1",
+              "Lights": null
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Price": 880000.0,
+  "PriceMultiplier": null,
+  "RunningCosts": null,
+  "RunningCostsMultiplier": null,
+  "Hidden": false
+}

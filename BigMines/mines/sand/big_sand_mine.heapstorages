@@ -1,0 +1,78 @@
+{
+  "Keyframes": {
+    "0": {
+      "Position": [
+        1.416,
+        -0.933,
+        -1.856
+      ],
+      "Rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "SizeX": 0.0,
+      "SizeZ": 0.0,
+      "ScaleY": 0.5
+    },
+    "0.1": {
+      "Position": [
+        1.416,
+        -0.607,
+        -1.856
+      ],
+      "Rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "SizeX": 2.757,
+      "SizeZ": 2.812,
+      "ScaleY": 1.0
+    },
+    "0.5": {
+      "Position": [
+        1.416,
+        -0.282,
+        -1.856
+      ],
+      "Rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "SizeX": 2.757,
+      "SizeZ": 2.812,
+      "ScaleY": 1.0
+    },
+    "1": {
+      "Position": [
+        1.416,
+        0.044,
+        -1.856
+      ],
+      "Rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "SizeX": 2.757,
+      "SizeZ": 2.812,
+      "ScaleY": 1.0
+    }
+  },
+  "Items": {
+    "base/sand.item": {
+      "MeshUri": "base/sand_mine_heap.obj",
+      "Capacity": null,
+      "ExplosionForce": null,
+      "Explosive": false
+    }
+  },
+  "LoadingTime": null,
+  "LoadingTimeMultiplier": null,
+  "MaxWeight": 2000.0,
+  "TargetUri": "BigMines/big_sand.mine",
+  "UnloadingTime": null,
+  "UnloadingTimeMultiplier": 0.05
+}

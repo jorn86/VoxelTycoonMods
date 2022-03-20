@@ -1,0 +1,78 @@
+{
+  "Keyframes": {
+    "0": {
+      "Position": [
+        1.0,
+        0.199,
+        1.653
+      ],
+      "Rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "SizeX": 0.0,
+      "SizeZ": 0.0,
+      "ScaleY": 0.0
+    },
+    "0.1": {
+      "Position": [
+        1.0,
+        0.199,
+        1.653
+      ],
+      "Rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "SizeX": 1.251,
+      "SizeZ": 2.653,
+      "ScaleY": 0.5
+    },
+    "0.5": {
+      "Position": [
+        1.0,
+        0.422,
+        1.653
+      ],
+      "Rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "SizeX": 1.316,
+      "SizeZ": 2.719,
+      "ScaleY": 1.0
+    },
+    "1": {
+      "Position": [
+        1.0,
+        0.65,
+        1.653
+      ],
+      "Rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "SizeX": 1.372,
+      "SizeZ": 2.763,
+      "ScaleY": 1.0
+    }
+  },
+  "Items": {
+    "base/iron_ore.item": {
+      "MeshUri": "base/iron_ore_item_heap.obj",
+      "Capacity": null,
+      "ExplosionForce": null,
+      "Explosive": false
+    }
+  },
+  "LoadingTime": null,
+  "LoadingTimeMultiplier": null,
+  "MaxWeight": 2000.0,
+  "TargetUri": "BigMines/big_iron.mine",
+  "UnloadingTime": null,
+  "UnloadingTimeMultiplier": 0.05
+}

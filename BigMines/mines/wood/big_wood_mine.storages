@@ -1,0 +1,11 @@
+{
+  "Items": {
+    "base/wood_log.item": null
+  },
+  "LoadingTime": null,
+  "LoadingTimeMultiplier": null,
+  "MaxWeight": 2000.0,
+  "TargetUri": "BigMines/big_wood.mine",
+  "UnloadingTime": null,
+  "UnloadingTimeMultiplier": 0.05
+}

@@ -1,0 +1,10 @@
+{
+  "BigMines/big_coal.mine#DisplayName": "Super coal mine",
+  "BigMines/big_copper.mine#DisplayName": "Super copper mine",
+  "BigMines/big_iron.mine#DisplayName": "Super iron mine",
+  "BigMines/big_sand.mine#DisplayName": "Super sand quarry",
+  "BigMines/big_stone.mine#DisplayName": "Super stone quarry",
+  "BigMines/big_wood.mine#DisplayName": "Super sawmill",
+  "BigMines/big_wood_2.mine#DisplayName": "Super sawmill",
+  "BigMines/mining_3.research#DisplayName": "Mining III"
+}

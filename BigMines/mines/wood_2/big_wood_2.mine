@@ -1,0 +1,56 @@
+{
+  "OutputInterval": 0.2,
+  "RequiresDeposit": true,
+  "Spacing": 20.0,
+  "Submeshes": null,
+  "Sounds": null,
+  "Smokes": [
+    {
+      "Uri": "base/wood_2_mine.smoke",
+      "Position": [
+        0.23,
+        4.75,
+        0.663
+      ]
+    }
+  ],
+  "ResearchUri": "BigMines/mining_3.research",
+  "Size": [
+    6.0,
+    5.0,
+    5.0
+  ],
+  "Liveries": {
+    "default": {
+      "MeshUri": "base/wood_2_mine.obj",
+      "MeshVariant": null,
+      "Lights": null,
+      "NightLiveries": [
+        {
+          "MeshUri": null,
+          "MeshVariant": "night_1",
+          "Lights": null
+        }
+      ],
+      "BiomeLiveries": {
+        "arctic": {
+          "MeshUri": null,
+          "MeshVariant": "arctic",
+          "Lights": null,
+          "NightLiveries": [
+            {
+              "MeshUri": null,
+              "MeshVariant": "arctic_night_1",
+              "Lights": null
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Price": 730000.0,
+  "PriceMultiplier": null,
+  "RunningCosts": null,
+  "RunningCostsMultiplier": null,
+  "Hidden": false
+}

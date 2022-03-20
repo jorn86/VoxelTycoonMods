@@ -1,0 +1,38 @@
+{
+  "Position": [
+    -1.907,
+    0.05,
+    1.581
+  ],
+  "Rotation": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "SizeX": 2.751,
+  "SizeZ": 3.246,
+  "Items": {
+    "base/stone.item": {
+      "MeshUri": "base/stone_item.obj",
+      "Resolution": [
+        4.0,
+        2.0,
+        5.0
+      ],
+      "Spacing": [
+        0.04,
+        0.04,
+        0.04
+      ],
+      "Capacity": null,
+      "ExplosionForce": null,
+      "Explosive": false
+    }
+  },
+  "LoadingTime": null,
+  "LoadingTimeMultiplier": null,
+  "MaxWeight": 2000.0,
+  "TargetUri": "BigMines/big_stone.mine",
+  "UnloadingTime": null,
+  "UnloadingTimeMultiplier": 0.05
+}

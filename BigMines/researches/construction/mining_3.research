@@ -1,0 +1,35 @@
+{
+  "ParentResearchUris": [
+    "base/mining_2.research"
+  ],
+  "Tier": 5,
+  "Days": null,
+  "DaysMultiplier": null,
+  "PricePerDay": null,
+  "PricePerDayMultiplier": null,
+  "ItemsPerDay": [
+    {
+      "Uri": "base/iron_ore.item",
+      "Count": null,
+      "CountMultiplier": null
+    },
+    {
+      "Uri": "base/coal.item",
+      "Count": null,
+      "CountMultiplier": null
+    },
+    {
+      "Uri": "base/copper_ore.item",
+      "Count": null,
+      "CountMultiplier": null
+    },
+    {
+      "Uri": "base/wood_log.item",
+      "Count": null,
+      "CountMultiplier": null
+    }
+  ],
+  "CompletedByDefault": false,
+  "Hidden": false,
+  "Goal": false
+}

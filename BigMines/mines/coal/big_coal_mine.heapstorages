@@ -1,0 +1,78 @@
+{
+  "Keyframes": {
+    "0": {
+      "Position": [
+        -1.8,
+        0.213,
+        0.6
+      ],
+      "Rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "SizeX": 0.0,
+      "SizeZ": 0.0,
+      "ScaleY": 0.0
+    },
+    "0.1": {
+      "Position": [
+        -1.8,
+        0.213,
+        0.6
+      ],
+      "Rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "SizeX": 1.27,
+      "SizeZ": 2.727,
+      "ScaleY": 0.5
+    },
+    "0.5": {
+      "Position": [
+        -1.8,
+        0.452,
+        0.6
+      ],
+      "Rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "SizeX": 1.27,
+      "SizeZ": 2.727,
+      "ScaleY": 1.0
+    },
+    "1": {
+      "Position": [
+        -1.8,
+        0.7,
+        0.6
+      ],
+      "Rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "SizeX": 1.33,
+      "SizeZ": 2.774,
+      "ScaleY": 1.0
+    }
+  },
+  "Items": {
+    "base/coal.item": {
+      "MeshUri": "base/coal_item_heap.obj",
+      "Capacity": null,
+      "ExplosionForce": null,
+      "Explosive": false
+    }
+  },
+  "LoadingTime": null,
+  "LoadingTimeMultiplier": null,
+  "MaxWeight": 2000.0,
+  "TargetUri": "BigMines/big_coal.mine",
+  "UnloadingTime": null,
+  "UnloadingTimeMultiplier": 0.05
+}
