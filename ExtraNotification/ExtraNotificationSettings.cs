@@ -1,4 +1,4 @@
-using VoxelTycoon;
+﻿using VoxelTycoon;
 using VoxelTycoon.Game.UI;
 using VoxelTycoon.Modding;
 
@@ -6,12 +6,22 @@ namespace ExtraNotification
 {
     class ExtraNotificationSettings : SettingsMod
     {
+        public const string DemandOversupplied = "DemandOversupplied";
+        public const string DemandIncreased = "DemandIncreased";
+        public const string DemandDecreased = "DemandDecreased";
+        public const string StoreClosing = "StoreClosing";
+        public const string StoreClosed = "StoreClosed";
         public const string EmptyTrainWarning = "EmptyTrainWarning";
         public const string EmptyTruckWarning = "EmptyTruckWarning";
         public const string SignalWarning = "SignalWarning";
 
         protected override void SetDefaults(WorldSettings worldSettings)
         {
+            worldSettings.SetBool<ExtraNotificationSettings>(DemandOversupplied, true);
+            worldSettings.SetBool<ExtraNotificationSettings>(DemandIncreased, false);
+            worldSettings.SetBool<ExtraNotificationSettings>(DemandDecreased, true);
+            worldSettings.SetBool<ExtraNotificationSettings>(StoreClosing, true);
+            worldSettings.SetBool<ExtraNotificationSettings>(StoreClosed, true);
             worldSettings.SetBool<ExtraNotificationSettings>(EmptyTrainWarning, true);
             worldSettings.SetBool<ExtraNotificationSettings>(EmptyTruckWarning, true);
             worldSettings.SetInt<ExtraNotificationSettings>(SignalWarning, 3);
@@ -19,6 +29,16 @@ namespace ExtraNotification
 
         protected override void SetupSettingsControl(SettingsControl settingsControl, WorldSettings worldSettings)
         {
+            SetupToggle(settingsControl, worldSettings, DemandOversupplied, "Show demand decreased notifications",
+                   "Allows you to disable the base game notification when a city store demand is oversupplied");
+            SetupToggle(settingsControl, worldSettings, DemandIncreased, "Show demand increased notifications",
+                   "Allows you to disable the base game notification when a city store increases its demand");
+            SetupToggle(settingsControl, worldSettings, DemandDecreased, "Show demand decreased notifications",
+                   "Allows you to disable the base game notification when a city store decreases its demand");
+            SetupToggle(settingsControl, worldSettings, StoreClosing, "Show store is closing notifications",
+                   "Allows you to disable the base game notification when a city store is closing because it's undersupplied");
+            SetupToggle(settingsControl, worldSettings, StoreClosed, "Show store closed notifications",
+                   "Allows you to disable the base game notification when a city store has closed");
             SetupToggle(settingsControl, worldSettings, EmptyTrainWarning, "Empty train unload", 
                 "Shows a warning when a train arrives at a station with only an Unload order, but there is no cargo");
             SetupToggle(settingsControl, worldSettings, EmptyTruckWarning, "Empty truck unload",
