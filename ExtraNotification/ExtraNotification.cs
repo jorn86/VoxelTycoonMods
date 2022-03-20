@@ -18,17 +18,14 @@ namespace ExtraNotification
 
         protected override void OnUpdate()
         {
-            //_logger.Log($"{Time.time}; {Time.timeSinceLevelLoad}; {Time.frameCount}");
             if (!EmptyUnloadPatch.GameStarted && Time.timeSinceLevelLoad > 10)
             {
-                _logger.Log($"{EmptyUnloadPatch.GameStarted} to true");
                 EmptyUnloadPatch.GameStarted = true;
             }
         }
 
         protected override void Deinitialize()
         {
-            _logger.Log($"{EmptyUnloadPatch.GameStarted} to false");
             EmptyUnloadPatch.GameStarted = false;
             new Harmony(PatchId).UnpatchAll();
             _logger.Log("ExtraNotification un-patch complete");

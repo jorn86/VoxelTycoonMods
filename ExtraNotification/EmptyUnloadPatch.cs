@@ -28,7 +28,6 @@ namespace ExtraNotification
                 && __instance.LoadMode == TransferMode.None
                 && __instance.GetTargetUnits().ToList().All(it => it.Storage.Count == 0))
             {
-                _logger.Log("Added " + __instance.Vehicle.Name);
                 _emptyUnload.Add(__instance.Vehicle);
             }
             return true;
@@ -46,7 +45,6 @@ namespace ExtraNotification
         {
             if (_emptyUnload.Remove(__instance))
             {
-                _logger.Log("Removed " + __instance.Name);
                 NotificationManager.Current.PushWarning($"{__instance.Name} has nothing to unload",
                     $"{__instance.Name} arrived at {__instance.VehicleStation.Location.Name} with Unload order, but doesn't have cargo to unload",
                     new GoToVehicleNotificationAction(__instance),

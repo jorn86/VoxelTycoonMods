@@ -42,7 +42,6 @@ namespace FactoryBuffer
                 }
             }
 
-            //_logger.Log($"{recipe.DisplayName}: Single recipe consumed, loading more in background: {PrintItems(waitingItems)}");
             BackgroundLoad(recipe, connections, waitingItems);
         }
 
@@ -68,7 +67,6 @@ namespace FactoryBuffer
         {
             if (recipe.InputItems.All(it => waitingItems.TryGetValue(it.Item, out int num) && num >= MaxBuffer(it)))
             {
-                //_logger.Log($"{recipe.DisplayName} full: {PrintItems(waitingItems)}");
                 return true;
             }
             return false;
@@ -99,14 +97,12 @@ namespace FactoryBuffer
             var timeSinceLastInput = Time.time;
             while (!BufferFull(recipe, waitingItems))
             {
-                //_logger.Log($"BackgroundLoad iteration: {PrintItems(waitingItems)}");
                 if (Load(recipe, connections, waitingItems))
                 {
                     timeSinceLastInput = Time.time;
                 }
                 if (timeSinceLastInput + 10f < Time.time)
                 {
-                    //_logger.Log($"cancelling background load: {PrintItems(waitingItems)}");
                     return;
                 }
                 await Task.Delay(300);

@@ -30,13 +30,11 @@ namespace SignalDistance
             {
                 if (visited.Contains(next.Track))
                 {
-                    //_logger.Log("Next already visited");
                     break;
                 }
 
                 if (next != connection && signalSelector.Invoke(next) != null)
                 {
-                    //_logger.Log("Next has signal");
                     break;
                 }
 
@@ -47,7 +45,6 @@ namespace SignalDistance
                 if (next.OuterConnectionCount == 0) break;
                 if (next.OuterConnectionCount > 1)
                 {
-                    //_logger.Log("Next has " + next.OuterConnectionCount);
                     return $"intersection {ToolHelper.FormatDistance(length)}";
                 }
                 else
