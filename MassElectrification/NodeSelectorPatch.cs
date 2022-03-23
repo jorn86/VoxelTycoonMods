@@ -18,7 +18,7 @@ namespace MassElectrification
                 return true;
             }
 
-            for (int i = 0; i < track.ConnectionCount; i++)
+            for (var i = 0; i < track.ConnectionCount; i++)
             {
                 MultiSelect(track.GetConnection(i), result);
             }

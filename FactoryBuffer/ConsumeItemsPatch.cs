@@ -47,7 +47,7 @@ namespace FactoryBuffer
 
         private static bool ConsumeAll(IDictionary<Item, int> waitingItems, Recipe recipe)
         {
-            if (!recipe.InputItems.All(it => waitingItems.TryGetValue(it.Item, out int num) && num > it.Count))
+            if (!recipe.InputItems.All(it => waitingItems.TryGetValue(it.Item, out var num) && num > it.Count))
             {
                 return false;
             }
@@ -65,7 +65,7 @@ namespace FactoryBuffer
 
         private static bool BufferFull(Recipe recipe, IDictionary<Item, int> waitingItems)
         {
-            if (recipe.InputItems.All(it => waitingItems.TryGetValue(it.Item, out int num) && num >= MaxBuffer(it)))
+            if (recipe.InputItems.All(it => waitingItems.TryGetValue(it.Item, out var num) && num >= MaxBuffer(it)))
             {
                 return true;
             }
@@ -77,9 +77,9 @@ namespace FactoryBuffer
             var any = false;
             foreach (var item in recipe.InputItems)
             {
-                if (!waitingItems.TryGetValue(item.Item, out int num) || num < MaxBuffer(item))
+                if (!waitingItems.TryGetValue(item.Item, out var num) || num < MaxBuffer(item))
                 {
-                    foreach (TrackConnection connection in connections)
+                    foreach (var connection in connections)
                     {
                         if (CargoHelper.InputItem(connection, item.Item))
                         {

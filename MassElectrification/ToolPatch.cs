@@ -26,7 +26,7 @@ namespace MassElectrification
 
         private static void ClearSelection(UniqueList<Rail> _targets)
         {
-            for (int i = 0; i < _targets.Count; i++)
+            for (var i = 0; i < _targets.Count; i++)
             {
                 _targets[i].SetTint(null);
             }

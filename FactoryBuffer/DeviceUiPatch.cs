@@ -26,14 +26,14 @@ namespace FactoryBuffer
                 return;
             }
 
-            foreach (Item item in _allItems)
+            foreach (var item in _allItems)
             {
-                RecipeItem[] inputItems = _device.Recipe.InputItems;
-                ProgressResourceView progressResourceView = _itemToProgressResourceView[item];
-                RecipeItem recipeItem = inputItems.FirstOrDefault((RecipeItem x) => x.Item == item);
+                var inputItems = _device.Recipe.InputItems;
+                var progressResourceView = _itemToProgressResourceView[item];
+                var recipeItem = inputItems.FirstOrDefault((RecipeItem x) => x.Item == item);
                 if (recipeItem != null)
                 {
-                    int waitingItemCount = _device.GetWaitingItemCount(recipeItem.Item);
+                    var waitingItemCount = _device.GetWaitingItemCount(recipeItem.Item);
                     progressResourceView.MaxValue = ConsumeItemsPatch.MaxBuffer(recipeItem);
                     progressResourceView.SetValue(Mathf.RoundToInt(waitingItemCount), immidiate);
                     progressResourceView.SetActive(active: true);

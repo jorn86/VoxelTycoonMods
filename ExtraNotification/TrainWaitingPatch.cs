@@ -35,7 +35,7 @@ namespace ExtraNotification
             var warningTime = ExtraNotificationSettings.GetSignalWarningDays();
             if (__instance is Train
                 && warningTime > 0
-                && waiting.TryGetValue(__instance as Train, out float value)
+                && waiting.TryGetValue(__instance as Train, out var value)
                 && Time.fixedTime - value > TimeManager.DaysToGameSeconds(warningTime))
             {
                 NotificationManager.Current.PushWarning($"{__instance.Name} waiting at a signal",
