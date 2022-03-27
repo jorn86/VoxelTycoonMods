@@ -1,6 +1,6 @@
 {
   "Title": "Super mines",
-  "Description": "Adds a super version of each mine building. The mines have speed, storage, throughput and price increased 20x, but you can only place one on each resource patch.\n\nVersion 0.1.0",
+  "Description": "Adds a super version of each mine building. The mines have speed, storage, throughput and price increased 20x, but you can only place one on each resource patch.\n\nVersion 0.1.1",
   "Tags": [ "Industries", "Researches", "Factories", "Other buildings" ],
   "PublishedFileId": 2782198038
 }
