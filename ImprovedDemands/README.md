@@ -19,5 +19,8 @@ Note that cities have a maximum number of stores based on population,
 so once a city grows it's probably a good idea to stop supplying low tier items. The store will disappear,
 and eventually be replaced by a store with higher tier demand.
 
+For stores in new cities, including those in your starting area, it's a little different:
+Most stores will be Tier 0, but about one in five will be Tier 1.
+
 The base game has a limitation that each city can have at most 2 stores of the same tier. This mod removes
 that limitation, so that high tier stores will keep spawning even if you've reached endgame.

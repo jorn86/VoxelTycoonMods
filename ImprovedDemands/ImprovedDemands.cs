@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using System.Linq;
+using HarmonyLib;
 using VoxelTycoon;
 using VoxelTycoon.Cities;
 using VoxelTycoon.Modding;
@@ -20,6 +21,15 @@ namespace ImprovedDemands
         {
             new Harmony(PatchId).UnpatchAll();
             _logger.Log("ImprovedDemands un-patch complete");
+        }
+
+        protected override void OnGameStarted()
+        {
+            CityStoreSpawnInfoManager.Current.GetAll().Enumerate()
+                .GroupBy(it => it.Tier)
+                .OrderBy(it => it.Key)
+                .ForEach(it => 
+                    _logger.Log($"T{it.Key}: {it.Join(d => d.Item.DisplayName)}"));
         }
     }
 }
