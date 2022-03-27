@@ -29,7 +29,7 @@ namespace ExtraNotification
 
         protected override void SetupSettingsControl(SettingsControl settingsControl, WorldSettings worldSettings)
         {
-            SetupToggle(settingsControl, worldSettings, DemandOversupplied, "Show demand decreased notifications",
+            SetupToggle(settingsControl, worldSettings, DemandOversupplied, "Show demand oversupplied notifications",
                    "Allows you to disable the base game notification when a city store demand is oversupplied");
             SetupToggle(settingsControl, worldSettings, DemandIncreased, "Show demand increased notifications",
                    "Allows you to disable the base game notification when a city store increases its demand");
@@ -39,11 +39,11 @@ namespace ExtraNotification
                    "Allows you to disable the base game notification when a city store is closing because it's undersupplied");
             SetupToggle(settingsControl, worldSettings, StoreClosed, "Show store closed notifications",
                    "Allows you to disable the base game notification when a city store has closed");
-            SetupToggle(settingsControl, worldSettings, EmptyTrainWarning, "Empty train unload", 
+            SetupToggle(settingsControl, worldSettings, EmptyTrainWarning, "Empty train unload",
                 "Shows a warning when a train arrives at a station with only an Unload order, but there is no cargo");
             SetupToggle(settingsControl, worldSettings, EmptyTruckWarning, "Empty truck unload",
                 "Shows a warning when a truck arrives at a station with only an Unload order, but there is no cargo");
-            SetupSlider(settingsControl, worldSettings, SignalWarning, "Waiting at signal warning time", 
+            SetupSlider(settingsControl, worldSettings, SignalWarning, "Waiting at signal warning time",
                 "Shows a warning when a train has been waiting at the same signal every this many in-game days. 0 is disabled.",
                 0, 30);
         }
@@ -68,7 +68,7 @@ namespace ExtraNotification
         {
             return WorldSettings.Current.GetBool<ExtraNotificationSettings>(setting);
         }
-        
+
         internal static int GetSignalWarningDays()
         {
             return WorldSettings.Current.GetInt<ExtraNotificationSettings>(SignalWarning);
