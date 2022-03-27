@@ -8,7 +8,7 @@ using VoxelTycoon.Tracks.Roads;
 namespace Sandbox
 {
     [HarmonyPatch(typeof(Building), nameof(Building.Price), MethodType.Getter)]
-    class BuildingPricePatch
+    internal class BuildingPricePatch
     {
         internal static bool Prefix(Building __instance, ref double __result)
         {

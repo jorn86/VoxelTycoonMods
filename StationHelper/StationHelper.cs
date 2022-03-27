@@ -12,7 +12,7 @@ using VoxelTycoon.UI;
 
 namespace StationHelper
 {
-    public class StationHelper : Mod
+    internal class StationHelper : Mod
     {
         private static readonly Logger _logger = new Logger<StationHelper>();
         private const string PatchId = "org.hertsig.voxeltycoon.StationHelper";
@@ -25,6 +25,7 @@ namespace StationHelper
 
         protected override void OnGameStarted()
         {
+            _logger.Log("StationHelper starting");
             new RailBuilderTool(null).Use(it =>
             {
                 if (it.ElectrificationAvailable) it.ElectrificationMode = RailElectrificationMode.Right;
@@ -47,7 +48,7 @@ namespace StationHelper
         }
     }
 
-    static class ToolExt
+    internal static class ToolExt
     {
         internal static void Use<T>(this T tool, Action<T> action) where T : ITool
         {

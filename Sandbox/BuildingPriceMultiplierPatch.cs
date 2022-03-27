@@ -5,7 +5,7 @@ using VoxelTycoon.Researches;
 namespace Sandbox
 {
     [HarmonyPatch(typeof(Building), nameof(Building.PriceMultiplier), MethodType.Getter)]
-    class BuildingPriceMultiplierPatch
+    internal class BuildingPriceMultiplierPatch
     {
         internal static bool Prefix(Building __instance, ref double __result)
         {

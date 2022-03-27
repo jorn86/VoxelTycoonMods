@@ -4,10 +4,10 @@ using VoxelTycoon.Tools;
 
 namespace Sandbox
 {
-    [HarmonyPatch(typeof(ToolHelper), nameof(ToolHelper.GetFlattenPrice), argumentTypes: new Type[] { typeof(Xyz), typeof(int) })]
-    class TerraformPricePatch
+    [HarmonyPatch(typeof(ToolHelper), nameof(ToolHelper.GetFlattenPrice), typeof(Xyz), typeof(int))]
+    internal class TerraformPricePatch
     {
-        static bool Prefix(ref double __result)
+        internal static bool Prefix(ref double __result)
         {
             return SandboxSettings.FreeIf(SandboxSettings.FreeTerraform, ref __result);
         }

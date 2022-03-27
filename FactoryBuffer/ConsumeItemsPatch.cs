@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace FactoryBuffer
 {
     [HarmonyPatch(typeof(DeviceHelper), nameof(DeviceHelper.WaitForConsumeItems))]
-    class ConsumeItemsPatch
+    internal class ConsumeItemsPatch
     {
         private static readonly VoxelTycoon.Logger _logger = new Logger<ConsumeItemsPatch>();
 

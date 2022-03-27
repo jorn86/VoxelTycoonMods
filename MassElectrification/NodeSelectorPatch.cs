@@ -7,7 +7,7 @@ using VoxelTycoon.Tracks.Rails;
 namespace MassElectrification
 {
     [HarmonyPatch(typeof(RailElectrificationTrackNodeSelector), nameof(RailElectrificationTrackNodeSelector.Select))]
-    class NodeSelectorPatch
+    internal class NodeSelectorPatch
     {
         private static readonly Logger _logger = new Logger<NodeSelectorPatch>();
 

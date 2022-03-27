@@ -4,7 +4,7 @@ using VoxelTycoon.Tracks;
 namespace Sandbox
 {
     [HarmonyPatch(typeof(VehicleUnitSharedData), nameof(VehicleUnitSharedData.Price), MethodType.Getter)]
-    class VehiclePricePatch
+    internal class VehiclePricePatch
     {
         internal static bool Prefix(ref double __result)
         {

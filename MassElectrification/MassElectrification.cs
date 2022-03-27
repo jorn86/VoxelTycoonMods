@@ -4,7 +4,7 @@ using VoxelTycoon.Modding;
 
 namespace MassElectrification
 {
-    public class MassElectrification : Mod
+    internal class MassElectrification : Mod
     {
         private static readonly Logger _logger = new Logger<MassElectrification>();
         private const string PatchId = "org.hertsig.voxeltycoon.MassElectrification";

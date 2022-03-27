@@ -4,9 +4,9 @@ using VoxelTycoon.Modding;
 
 namespace FactoryBuffer
 {
-    public class FactoryBufferMod : Mod
+    internal class FactoryBuffer : Mod
     {
-        private static readonly Logger _logger = new Logger<FactoryBufferMod>();
+        private static readonly Logger _logger = new Logger<FactoryBuffer>();
         private const string PatchId = "org.hertsig.voxeltycoon.FactoryBuffer";
 
         protected override void Initialize()

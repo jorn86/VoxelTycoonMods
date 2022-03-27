@@ -5,7 +5,7 @@ using VoxelTycoon.Modding;
 
 namespace Sandbox
 {
-    class Sandbox : Mod
+    internal class Sandbox : Mod
     {
         private static readonly Logger _logger = new Logger<Sandbox>();
         private const string PatchId = "org.hertsig.voxeltycoon.Sandbox";

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace SignalDistance
 {
     [HarmonyPatch(typeof(RailSignalBuilderTool), methodName: "GetMessage")]
-    class SignalBuilderToolPatch
+    internal class SignalBuilderToolPatch
     {
         private static readonly Logger _logger = new Logger<SignalBuilderToolPatch>();
 

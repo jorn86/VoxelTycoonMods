@@ -11,7 +11,7 @@ using VoxelTycoon.UI;
 namespace FactoryBuffer
 {
     [HarmonyPatch(typeof(DeviceWindowOverviewTab), methodName: "InvalidateRequiredResources")]
-    class DeviceUiPatch
+    internal class DeviceUiPatch
     {
         internal static bool Prefix(bool immidiate, Device ____device, List<Item> ____allItems, Dictionary<Item, ProgressResourceView> ____itemToProgressResourceView)
         {

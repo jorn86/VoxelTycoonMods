@@ -5,7 +5,7 @@ using VoxelTycoon.Modding;
 
 namespace ExtraNotification
 {
-    class ExtraNotification : Mod
+    internal class ExtraNotification : Mod
     {
         private static readonly VoxelTycoon.Logger _logger = new Logger<ExtraNotification>();
         private const string PatchId = "org.hertsig.voxeltycoon.ExtraNotification";

@@ -5,7 +5,7 @@ using VoxelTycoon.Tools.Builder;
 
 namespace BigMines
 {
-    public class BigMines : Mod
+    internal class BigMines : Mod
     {
         private static readonly Logger _logger = new Logger<BigMines>();
         private const string PatchId = "org.hertsig.voxeltycoon.BigMines";

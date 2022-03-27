@@ -12,7 +12,7 @@ using VoxelTycoon.UI;
 namespace ExtraNotification
 {
     [HarmonyPatch]
-    class EmptyUnloadPatch
+    internal class EmptyUnloadPatch
     {
         private static readonly Logger _logger = new Logger<EmptyUnloadPatch>();
         private static readonly ISet<Vehicle> _emptyUnload = new HashSet<Vehicle>();

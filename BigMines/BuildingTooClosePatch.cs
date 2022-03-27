@@ -11,7 +11,7 @@ using Logger = VoxelTycoon.Logger;
 namespace BigMines
 {
     [HarmonyPatch(typeof(BuildingHelper), nameof(BuildingHelper.TooClose))]
-    class BuildingTooClosePatch
+    internal class BuildingTooClosePatch
     {
         private static readonly Logger _logger = new Logger<BuildingTooClosePatch>();
         private static readonly Dictionary<Item, List<int>> MineAssetIdsPerItem = new Dictionary<Item, List<int>>();

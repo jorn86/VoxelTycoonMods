@@ -4,7 +4,7 @@ using VoxelTycoon.Tracks.Rails;
 namespace Sandbox
 {
     [HarmonyPatch(typeof(RailSignalSharedData), nameof(RailSignalSharedData.BasePrice), MethodType.Getter)]
-    class SignalPricePatch
+    internal class SignalPricePatch
     {
         internal static bool Prefix(ref double __result)
         {

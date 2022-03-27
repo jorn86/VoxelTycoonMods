@@ -4,7 +4,7 @@ using VoxelTycoon;
 namespace Sandbox
 {
     [HarmonyPatch(typeof(Region), nameof(Region.Price), MethodType.Getter)]
-    class RegionPricePatch
+    internal class RegionPricePatch
     {
         internal static bool Prefix(ref double __result)
         {

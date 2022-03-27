@@ -4,7 +4,7 @@ using VoxelTycoon.Modding;
 
 namespace ExtraNotification
 {
-    class ExtraNotificationSettings : SettingsMod
+    internal class ExtraNotificationSettings : SettingsMod
     {
         public const string DemandOversupplied = "DemandOversupplied";
         public const string DemandIncreased = "DemandIncreased";

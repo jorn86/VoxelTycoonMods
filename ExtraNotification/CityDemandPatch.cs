@@ -6,7 +6,7 @@ using VoxelTycoon.Notifications;
 namespace ExtraNotification
 {
     [HarmonyPatch(typeof(CityDemand), nameof(CityDemand.PushNotification))]
-    class CityDemandPatch
+    internal class CityDemandPatch
     {
         private static readonly Logger _logger = new Logger<CityDemandPatch>();
 

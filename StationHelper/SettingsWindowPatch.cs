@@ -8,7 +8,7 @@ using VoxelTycoon.Tools;
 namespace StationHelper
 {
     [HarmonyPatch(typeof(SettingsWindowUpDownItem))]
-    class SettingPatch
+    internal class SettingPatch
     {
         private static readonly Logger _logger = new Logger<RailElectrificationTool>();
         private static bool _inPatch;

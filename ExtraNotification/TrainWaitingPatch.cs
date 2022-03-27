@@ -11,7 +11,7 @@ using VoxelTycoon.UI;
 namespace ExtraNotification
 {
     [HarmonyPatch]
-    class TrainWaitingPatch
+    internal class TrainWaitingPatch
     {
         private static readonly VoxelTycoon.Logger _logger = new Logger<TrainWaitingPatch>();
         private static readonly Dictionary<Train, float> waiting = new Dictionary<Train, float>();

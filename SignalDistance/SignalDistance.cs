@@ -4,7 +4,7 @@ using VoxelTycoon.Modding;
 
 namespace SignalDistance
 {
-    class SignalDistance : Mod
+    internal class SignalDistance : Mod
     {
         private static readonly Logger _logger = new Logger<SignalDistance>();
         private const string PatchId = "org.hertsig.voxeltycoon.SignalDistance";

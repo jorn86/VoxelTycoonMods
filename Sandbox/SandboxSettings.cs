@@ -4,7 +4,7 @@ using VoxelTycoon.Modding;
 
 namespace Sandbox
 {
-    class SandboxSettings : SettingsMod
+    internal class SandboxSettings : SettingsMod
     {
         public const string FreeBuilding = "FreeBuilding";
         public const string FreeInfra = "FreeInfra";

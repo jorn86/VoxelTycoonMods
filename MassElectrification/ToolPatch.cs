@@ -6,7 +6,7 @@ using VoxelTycoon.Tracks.Rails;
 namespace MassElectrification
 {
     [HarmonyPatch(typeof(RailElectrificationTool), nameof(RailElectrificationTool.OnUpdate))]
-    class ToolPatch
+    internal class ToolPatch
     {
         private static readonly Logger _logger = new Logger<RailElectrificationTool>();
         private static bool _multiMode = false;

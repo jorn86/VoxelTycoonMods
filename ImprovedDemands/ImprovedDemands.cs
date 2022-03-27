@@ -6,7 +6,7 @@ using VoxelTycoon.Modding;
 
 namespace ImprovedDemands
 {
-    class ImprovedDemands : Mod
+    internal class ImprovedDemands : Mod
     {
         private static readonly Logger _logger = new Logger<ImprovedDemands>();
         private const string PatchId = "org.hertsig.voxeltycoon.ImprovedDemands";
@@ -28,7 +28,7 @@ namespace ImprovedDemands
             CityStoreSpawnInfoManager.Current.GetAll().Enumerate()
                 .GroupBy(it => it.Tier)
                 .OrderBy(it => it.Key)
-                .ForEach(it => 
+                .ForEach(it =>
                     _logger.Log($"T{it.Key}: {it.Join(d => d.Item.DisplayName)}"));
         }
     }

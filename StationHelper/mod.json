@@ -1,5 +1,5 @@
 {
   "Title": "Station helper",
   "Description": "Sets the default station length and signal spacing to 150m (up from 65m), and allows you to change those values by 50 (up from 5) by holding Control. Also sets the default for rail electrification to Right if electrification is available (resrearched).\n\nSource: https://github.com/jorn86/VoxelTycoonMods\nChangelog: https://github.com/jorn86/VoxelTycoonMods/blob/master/StationHelper/changelog.md\n\nVersion 0.1.0",
-  "Tags": [ "Rails" ]
+  "Tags": [ "Utils", "Rails", "Stations" ]
 }
