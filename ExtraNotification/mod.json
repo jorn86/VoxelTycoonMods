@@ -1,6 +1,6 @@
 {
   "Title": "Extra notifications",
-  "Description": "Shows notifications when\n- A train has been waiting at a signal for a long time\n- A train or truck arrives at a station, has only an unload order there, and was already empty\n- More to come later! Leave suggestions in the comments.\n\nSource: https://github.com/jorn86/VoxelTycoonMods\nChangelog: https://github.com/jorn86/VoxelTycoonMods/blob/master/ExtraNotification/changelog.md\n\nVersion 0.2.0",
+  "Description": "Shows notifications when\n- A train has been waiting at a signal for a long time\n- A train or truck arrives at a station, has only an unload order there, and was already empty\n- More to come later! Leave suggestions in the comments.\n\nSource: https://github.com/jorn86/VoxelTycoonMods\nChangelog: https://github.com/jorn86/VoxelTycoonMods/blob/master/ExtraNotification/changelog.md\n\nVersion 0.2.1",
   "Tags": [ "Utils" ],
   "PublishedFileId": 2777617518
 }

@@ -24,9 +24,9 @@ namespace ExtraNotification
         {
             if (GameStarted
                 && Enabled(__instance.Vehicle)
-                && __instance.UnloadMode != TransferMode.None 
+                && __instance.UnloadMode != TransferMode.None
                 && __instance.LoadMode == TransferMode.None
-                && __instance.GetTargetUnits().ToList().All(it => it.Storage.Count == 0))
+                && __instance.GetTargetUnits().ToList().All(it => it.Storage?.Count == 0))
             {
                 _emptyUnload.Add(__instance.Vehicle);
             }
